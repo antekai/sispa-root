@@ -18,12 +18,21 @@
   -->
 
   <main>
-    <route default>
-      <application name="@single-spa/welcome"></application>
-    </route>
-
     <route path="vue">
       <application name="@ante/sispa-vue"></application>
+    </route>
+
+    <route path="svelte">
+      <application name="@ante/sispa-svelte"></application>
+    </route>
+
+    <route path="mix">
+      <application name="@ante/sispa-svelte"></application>
+      <application name="@ante/sispa-vue"></application>
+    </route>
+
+    <route default>
+      <application name="@single-spa/welcome"></application>
     </route>
   </main>
 </single-spa-router>
