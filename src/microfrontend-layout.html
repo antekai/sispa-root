@@ -18,6 +18,9 @@
   -->
 
   <main>
+    <route path="mfe-parent">
+      <application name="@ante/sispa-mfe-parent"></application>
+    </route>
     <route path="vue">
       <application name="@ante/sispa-vue"></application>
     </route>
@@ -32,7 +35,8 @@
     </route>
 
     <route default>
-      <application name="@single-spa/welcome"></application>
+      <!-- <application name="@single-spa/welcome"></application> -->
+      <application name="@ante/sispa-mfe-parent"></application>
     </route>
   </main>
 </single-spa-router>
